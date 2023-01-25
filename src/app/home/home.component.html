@@ -1,0 +1,14 @@
+<form #form="ngForm" (ngSubmit)="sub(form)">
+<div class="container">
+    <div class="row" id="ali">
+        <div class="col-lg-6" >
+            <h1>check the console after clicking the button </h1>
+            <input type="text" name="email" ngModel [(ngModel)]="user.email" placeholder="Email" class="form-control">
+            <input type="password" name="password" ngModel [(ngModel)]="user.password" placeholder="Password" class="form-control">
+            <h1>this is my email : {{user.email}}</h1>
+            <h1>this is my password :{{user.password}}</h1>
+            <button class="btn btn-success">login</button>
+        </div>
+    </div>
+</div>
+</form>
